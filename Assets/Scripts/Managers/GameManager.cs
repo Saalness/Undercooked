@@ -127,7 +127,7 @@ namespace Undercooked.Managers
             //_startAtMenuAction = playerInput.currentActionMap["Start@Menu"];
             // _startAtMenuAction.performed += HandleStart;
             
-            cameraManager.FocusFirstPlayer();
+           // cameraManager.FocusFirstPlayer();
             
             Score = 0;
             _timeRemaining = levelData.durationTime;

@@ -19,7 +19,7 @@
                     "id": "f1de6946-c93a-4f7f-9aa4-897cae1ddc29",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Dash",
@@ -35,7 +35,7 @@
                     "id": "3ede32fd-0595-4a9b-9a3f-742543520287",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Tap"
                 },
                 {
                     "name": "Emote",
