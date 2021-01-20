@@ -169,7 +169,7 @@ namespace Undercooked.Appliances
                 Ingredients[1].Type != Ingredients[2].Type ||
                 Ingredients[0].Type != Ingredients[2].Type)
             {
-                // Debug.Log("[CookingPot] Soup with mixed ingredients! You must thrash it away! What a waste!");
+                // Debug.Log("[CookingPot] Soup with mixed ingredients! You must trash it away! What a waste!");
                 return null;
             }
 

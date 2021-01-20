@@ -65,7 +65,7 @@ namespace Undercooked.UI
 
         private void HandleAlertTime(Order order)
         {
-            StartShake();
+            StartShakeAsync();
         }
 
         private void DuplicateMaterial()
@@ -177,10 +177,10 @@ namespace Undercooked.UI
                 .anchoredPositionTransition_X(desiredX, initialSlideDuration, LeanEase.Decelerate);
         }
 
-        private void StartShake()
+        private async Task StartShakeAsync()
         {
             _shake = true;
-            ShakeAsync();
+            await ShakeAsync();
         }
         
         private async Task ShakeAsync()
