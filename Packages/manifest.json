@@ -1,6 +1,6 @@
 {
-    "dependencies": {
-    
+  "dependencies": {
+    "com.ptc.vuforia.engine": "git+https://git-packages.developer.vuforia.com#9.6.4",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.6.3",
     "com.unity.formats.fbx": "3.2.1-preview.2",
