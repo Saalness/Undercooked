@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.ptc.vuforia.engine": "git+https://git-packages.developer.vuforia.com#9.6.4",
+    "com.daltonlima.core": "https://github.com/daltonbr/com.daltonlima.core.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.6.3",
     "com.unity.formats.fbx": "3.2.1-preview.2",
@@ -14,8 +14,6 @@
     "com.unity.textmeshpro": "3.0.3",
     "com.unity.timeline": "1.4.4",
     "com.unity.ugui": "1.0.0",
-    "com.unity.xr.arcore": "4.0.9",
-    "com.unity.xr.arfoundation": "4.0.9",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
