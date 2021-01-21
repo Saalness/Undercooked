@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+namespace Undercooked.UI
+{
 public class Menu : MonoBehaviour
 {
     public GameObject Main_menu;
     public GameObject Tutorial;
     public GameObject Settings;
     public GameObject Controls;
+    public GameObject Game_end;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,4 +63,15 @@ public class Menu : MonoBehaviour
         Controls.SetActive(true);
         Main_menu.SetActive(false);
     }
+    public void Back_to_menu_scene()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    public void Show_game_end()
+    {
+        Game_end.SetActive(true);
+    }
+
+}
+
 }

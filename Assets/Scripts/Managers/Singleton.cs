@@ -31,10 +31,10 @@ namespace Undercooked.Managers
                     instance = this as T;
                 else if (instance != this)
                 {
-                    Debug.LogError("Singleton<" + this.GetType() + "> already has an instance on scene. Component will be destroyed.");
+                   // Debug.LogError("Singleton<" + this.GetType() + "> already has an instance on scene. Component will be destroyed.");
 #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.delayCall -= DestroySelf;
-                    UnityEditor.EditorApplication.delayCall += DestroySelf;
+                   // UnityEditor.EditorApplication.delayCall -= DestroySelf;
+                   // UnityEditor.EditorApplication.delayCall += DestroySelf;
 #endif
                 }
             }

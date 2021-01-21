@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Undercooked.UI
 {
@@ -29,7 +30,7 @@ namespace Undercooked.UI
         [Space]
         
         [Header("GameOverMenu")]
-        [SerializeField] private GameObject gameOverMenu;
+        [SerializeField] public GameObject gameOverMenu;
         private CanvasGroup _gameOverMenuCanvasGroup;
         [SerializeField] private GameObject firstSelectedGameOverMenu;
         [SerializeField] private AudioClip successClip;
@@ -53,7 +54,7 @@ namespace Undercooked.UI
         public static ButtonPressed OnQuitButton;
         
         
-        private void Awake()
+        private new void Awake()
         {
             _initalMenuCanvasGroup = initialMenu.GetComponent<CanvasGroup>();
             _pauseMenuCanvasGroup = pauseMenu.GetComponent<CanvasGroup>();
@@ -125,12 +126,14 @@ namespace Undercooked.UI
 
         private static void HandleRestartButton()
         {
-            GameOverMenu();
+            //GameOverMenu();
+     
             OnRestartButton?.Invoke();
         }
 
         private static void HandleQuitButton()
         {
+            //Application.Quit();
             OnQuitButton?.Invoke();
         }
 
@@ -164,7 +167,8 @@ namespace Undercooked.UI
         }
 
         public static void GameOverMenu()
-        { 
+        {
+            
             if (Instance.gameOverMenu.activeInHierarchy == false)
             {
                 if (Instance.pauseMenu.activeInHierarchy)
