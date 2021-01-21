@@ -270,6 +270,9 @@ namespace Undercooked.Managers
             inputController.OnStartPressedAtMenu -= HandlePausePressed;
             inputController.EnableMenuControls();
 
+            Debug.Log("Timer ran out");
+            SceneManager.LoadScene("End Menu");
+
             // pause time?
             //Time.timeScale = 0;
             MenuPanelUI.GameOverMenu();
