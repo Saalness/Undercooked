@@ -11,8 +11,6 @@ using UnityEngine.Assertions;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-
-
 namespace Undercooked.Managers
 {
     [RequireComponent(typeof(OrderManager))]
@@ -272,13 +270,9 @@ namespace Undercooked.Managers
             inputController.OnStartPressedAtMenu -= HandlePausePressed;
             inputController.EnableMenuControls();
 
-            //added to show the end menu, didn't work?
-            //Menu.Show_game_end();
-
             // pause time?
             //Time.timeScale = 0;
             MenuPanelUI.GameOverMenu();
-            
             
             // Stop OrderManager
             orderManager.StopAndClear();
