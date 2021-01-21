@@ -60,4 +60,8 @@ public class Menu : MonoBehaviour
         Controls.SetActive(true);
         Main_menu.SetActive(false);
     }
+    public void Back_to_main()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 }
