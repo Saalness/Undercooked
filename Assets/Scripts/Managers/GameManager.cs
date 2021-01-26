@@ -100,7 +100,7 @@ namespace Undercooked.Managers
         {
             await Task.Delay(1000);
             MenuPanelUI.InitialMenuSetActive(true);
-            cameraManager.SwitchDollyCamera();
+            //cameraManager.SwitchDollyCamera();
             
             // activate MenuControls
             inputController.EnableMenuControls();
@@ -124,7 +124,7 @@ namespace Undercooked.Managers
             //_startAtMenuAction = playerInput.currentActionMap["Start@Menu"];
             // _startAtMenuAction.performed += HandleStart;
             
-            cameraManager.FocusFirstPlayer();
+            //cameraManager.FocusFirstPlayer();
             
             Score = 0;
             _timeRemaining = levelData.durationTime;

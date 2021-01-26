@@ -38,7 +38,7 @@ namespace Undercooked.Managers
             _particleSystemTransform.position = _avatar1.position;
         }
 
-        public void FocusFirstPlayer()
+        /*public void FocusFirstPlayer()
         {
             SwitchFocus(InputController.PlayerControllerIndex.First);
         }
@@ -58,7 +58,7 @@ namespace Undercooked.Managers
             SwitchFocus(playerControllerIndex);
         }
 
-        private void SwitchFocus(InputController.PlayerControllerIndex playerControllerIndex)
+        /*private void SwitchFocus(InputController.PlayerControllerIndex playerControllerIndex)
         {
             dollyCamera.gameObject.SetActive(false);
             dollyCameraTarget.gameObject.SetActive(false);
@@ -87,7 +87,7 @@ namespace Undercooked.Managers
             }
             _lastActivatedPlayerController = playerControllerIndex;
         }
-
+        
         internal void SwitchDollyCamera()
         {
             _lastActivatedPlayerController = InputController.PlayerControllerIndex.None;
@@ -97,7 +97,7 @@ namespace Undercooked.Managers
             dollyCamera.gameObject.SetActive(true);
             dollyCameraTarget.gameObject.SetActive(true);
         }
-        
+        */
         private void MoveStarParticle(Transform from, Transform to, float delayInSeconds = 1f)
         {
             starGlowParticleSystem.Play();
