@@ -1,6 +1,6 @@
 {
-    "dependencies": {
-    
+  "dependencies": {
+    "com.ptc.vuforia.engine": "file:C:/Users/hanin/Downloads/com.ptc.vuforia.engine-9.6.3.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.6.3",
     "com.unity.formats.fbx": "3.2.1-preview.2",
