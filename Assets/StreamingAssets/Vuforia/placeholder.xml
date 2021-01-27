@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="AR_image_target" size="5.000000 3.534778" />
+    <ImageTarget name="MuscatMap" size="5.000000 3.554302" />
+    <ImageTarget name="placeholder2" size="5.000000 2.876490" />
+    <ImageTarget name="placeholder1" size="5.000000 2.963164" />
+  </Tracking>
+</QCARConfig>

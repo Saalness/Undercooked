@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour
     public GameObject Tutorial;
     public GameObject Settings;
     public GameObject Controls;
+    public GameObject information;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class Menu : MonoBehaviour
         Tutorial.SetActive(false);
         Settings.SetActive(false);
         Controls.SetActive(false);
+        information.SetActive(false);
         Main_menu.SetActive(true);
     }
 
@@ -51,6 +53,16 @@ public class Menu : MonoBehaviour
         Settings.SetActive(true);
         Controls.SetActive(false);
         Main_menu.SetActive(false);
+        information.SetActive(false);
+    }
+
+    public void Btn_info_clicked()
+    {
+        Tutorial.SetActive(false);
+        Settings.SetActive(false);
+        Controls.SetActive(false);
+        Main_menu.SetActive(false);
+        information.SetActive(true);
     }
 
     public void Btn_controls_clicked()
@@ -59,6 +71,7 @@ public class Menu : MonoBehaviour
         Settings.SetActive(false);
         Controls.SetActive(true);
         Main_menu.SetActive(false);
+        information.SetActive(false);
     }
     public void Back_to_main()
     {
